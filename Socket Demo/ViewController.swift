@@ -10,9 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var labelStatus: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        //SwiftWebSocketDemo.shared.echoTest()
+        StarScreamDemo.shared.setup()
     }
 
 

@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -12,6 +12,8 @@
 		4E27D66222F18FA400EB5EA9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E27D66022F18FA400EB5EA9 /* Main.storyboard */; };
 		4E27D66422F18FA500EB5EA9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4E27D66322F18FA500EB5EA9 /* Assets.xcassets */; };
 		4E27D66722F18FA500EB5EA9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4E27D66522F18FA500EB5EA9 /* LaunchScreen.storyboard */; };
+		4E27D66F22F1AC8D00EB5EA9 /* SwiftWebSocketDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E27D66E22F1AC8D00EB5EA9 /* SwiftWebSocketDemo.swift */; };
+		4E27D67122F1C6A100EB5EA9 /* StarScreamDemo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E27D67022F1C6A100EB5EA9 /* StarScreamDemo.swift */; };
 		73775C82F52C1CB0BC0E6EE7 /* Pods_Socket_Demo.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BBC10F6F9514EFFBF48BC8B3 /* Pods_Socket_Demo.framework */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +25,8 @@
 		4E27D66322F18FA500EB5EA9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4E27D66622F18FA500EB5EA9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4E27D66822F18FA500EB5EA9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4E27D66E22F1AC8D00EB5EA9 /* SwiftWebSocketDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwiftWebSocketDemo.swift; sourceTree = "<group>"; };
+		4E27D67022F1C6A100EB5EA9 /* StarScreamDemo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarScreamDemo.swift; sourceTree = "<group>"; };
 		5E2A4659CDA79AC4D4EEAE93 /* Pods-Socket Demo.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Socket Demo.release.xcconfig"; path = "Target Support Files/Pods-Socket Demo/Pods-Socket Demo.release.xcconfig"; sourceTree = "<group>"; };
 		644EB652616856EF683F8216 /* Pods-Socket Demo.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Socket Demo.debug.xcconfig"; path = "Target Support Files/Pods-Socket Demo/Pods-Socket Demo.debug.xcconfig"; sourceTree = "<group>"; };
 		BBC10F6F9514EFFBF48BC8B3 /* Pods_Socket_Demo.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Socket_Demo.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -62,6 +66,8 @@
 			isa = PBXGroup;
 			children = (
 				4E27D65C22F18FA400EB5EA9 /* AppDelegate.swift */,
+				4E27D66E22F1AC8D00EB5EA9 /* SwiftWebSocketDemo.swift */,
+				4E27D67022F1C6A100EB5EA9 /* StarScreamDemo.swift */,
 				4E27D65E22F18FA400EB5EA9 /* ViewController.swift */,
 				4E27D66022F18FA400EB5EA9 /* Main.storyboard */,
 				4E27D66322F18FA500EB5EA9 /* Assets.xcassets */,
@@ -77,7 +83,6 @@
 				644EB652616856EF683F8216 /* Pods-Socket Demo.debug.xcconfig */,
 				5E2A4659CDA79AC4D4EEAE93 /* Pods-Socket Demo.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -205,6 +210,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				4E27D65F22F18FA400EB5EA9 /* ViewController.swift in Sources */,
+				4E27D67122F1C6A100EB5EA9 /* StarScreamDemo.swift in Sources */,
+				4E27D66F22F1AC8D00EB5EA9 /* SwiftWebSocketDemo.swift in Sources */,
 				4E27D65D22F18FA400EB5EA9 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -355,13 +362,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 859UH37RYM;
 				INFOPLIST_FILE = "Socket Demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "gojek.com.Socket-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -374,13 +382,14 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 859UH37RYM;
 				INFOPLIST_FILE = "Socket Demo/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "gojek.com.Socket-Demo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 5.0;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
